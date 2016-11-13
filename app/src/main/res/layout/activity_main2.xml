@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total "
+        android:textSize="35sp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvsum2"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/tvtotal"/>
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Transaction "
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap + to add one"
+        android:layout_below="@id/one"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btnadd"
+        android:text=" + "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/two"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
