@@ -25,6 +25,9 @@ public class Main2Activity extends AppCompatActivity {
         Float result = bundle.getFloat("sum");
         tvsum2.setText(result+" ");
 
+
+
+
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,8 +37,10 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        }
+
 
 
     }
-}
+
 

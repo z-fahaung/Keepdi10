@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 result = (num1 - num2) / 30;
                 tvsum.setText(result+" ฿");
 
-
             }
         });
 

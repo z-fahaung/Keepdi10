@@ -30,7 +30,7 @@ public class Main3Activity extends AppCompatActivity {
         btnpick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent link3 = new Intent(getApplicationContext(),Main4Activity.class);
+                Intent link3 = new Intent(getApplicationContext(),Main5Activity.class);
                 startActivity(link3);
             }
         });
