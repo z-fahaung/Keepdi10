@@ -21,9 +21,7 @@ public class Main2Activity extends AppCompatActivity {
         tvsum2 = (TextView) findViewById(R.id.tvsum2);
         tvtotal = (TextView) findViewById(R.id.tvtotal);
         btnadd = (Button) findViewById(R.id.btnadd);
-        Bundle bundle = getIntent().getExtras();
-        Float result = bundle.getFloat("sum");
-        tvsum2.setText(result+" ");
+
 
 
 

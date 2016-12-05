@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 float total = 0;
                 Intent link1 = new Intent(getApplicationContext(),Main2Activity.class);
-                link1.putExtra("sum",total);
                 startActivity(link1);
 
 

@@ -1,15 +1,16 @@
 package com.example.zfah.keepdi;
-
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
-import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Main5Activity extends Activity {
+public class Main5Activity extends AppCompatActivity {
     private TextView txtinfo;
     LinearLayout lvOne, lvTwo, lvThree, lvFour, lvFive, lvparent;
     TextView txtOne, txtTwo, txtThree, txtFour, txtFive;
@@ -65,6 +66,8 @@ public class Main5Activity extends Activity {
             @Override
             public void onClick(View v) {
 // TODO Auto-generated method stub
+                Intent linkadd = new Intent(getApplicationContext(),Main2Activity.class);
+                startActivity(linkadd);
                 pieView.removeSelectedPie();
                 txtinfo.setText("Details");
             }
@@ -101,11 +104,11 @@ public class Main5Activity extends Activity {
     private void set(PieView pieView) {
         ArrayList<PieHelper> pieHelperArrayList = new ArrayList<PieHelper>();
 
-        int color0 = Color.rgb(254, 215, 119);
-        int color1 = Color.rgb(240, 126, 107);
-        int color2 = Color.rgb(240, 198, 166);
-        int color3 = Color.rgb(183, 238, 254);
-        int color4 = Color.rgb(20, 156, 82);
+        int color0 = Color.rgb(172, 181, 163);
+        int color1 = Color.rgb(154, 188, 115);
+        int color2 = Color.rgb(76, 92, 113);
+        int color3 = Color.rgb(98, 123, 111);
+        int color4 = Color.rgb(159, 184, 148);
 
         pieHelperArrayList.add(new PieHelper(55, color0));
         pieHelperArrayList.add(new PieHelper(25, color1));

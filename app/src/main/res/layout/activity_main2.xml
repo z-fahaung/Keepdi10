@@ -3,11 +3,13 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#F5F5DC"
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/tvtotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:text="Total "
         android:textSize="35sp"
         android:textColor="#000000"
@@ -34,10 +36,14 @@
         android:layout_below="@id/one"
         android:layout_centerInParent="true"/>
     <Button
+        android:layout_margin="10dp"
         android:id="@+id/btnadd"
-        android:text=" + "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30sp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
         android:layout_below="@id/two"
         android:layout_centerHorizontal="true"
         />
